@@ -20,5 +20,71 @@
 |           syntax            |      |
 |      static semantics       |      |
 |          semantics          |      |
+|     low-level language      |      |
+|     high-level language     |      |
+|    interpreted language     |      |
+|      compiled language      |      |
+|         source code         |      |
+|        machine code         |      |
+|           Python            |      |
+|             IDE             |      |
+|          Anaconda           |      |
+|           Spyder            |      |
+|       IPython console       |      |
+|            shell            |      |
+|      program (script)       |      |
+|     command (statement)     |      |
+|           object            |      |
+|            type             |      |
+|        scalar object        |      |
+|      non-scalar object      |      |
+|           literal           |      |
+|       floating point        |      |
+|            bool             |      |
+|            None             |      |
+|          operator           |      |
+|         expression          |      |
+|            value            |      |
+|        shell prompt         |      |
+|          variable           |      |
+|           binding           |      |
+|         assignment          |      |
+|        reserved word        |      |
+|      comment (in code)      |      |
+|    straight-line program    |      |
+|      branching program      |      |
+|         conditional         |      |
+|   indentation (in Python)   |      |
+|      nested statement       |      |
+|     compound expression     |      |
+|        constant time        |      |
+|  computaitonal complexity   |      |
+|   conditional expression    |      |
+|           strings           |      |
+|     overloaded operator     |      |
+|     repetition operator     |      |
+|        type checking        |      |
+|          indexing           |      |
+|           slicing           |      |
+|  type conversion (casting)  |      |
+| formatted string expression |      |
+|            input            |      |
+|           Unicode           |      |
+|     iteration (looping)     |      |
+|         pseudocode          |      |
+|         while loop          |      |
+|       hand simulation       |      |
+|            break            |      |
+|          for loop           |      |
+|            tuple            |      |
+|            range            |      |
+|         in operator         |      |
+|      PEP 8 style guide      |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
+|                             |      |
 |                             |      |
 
