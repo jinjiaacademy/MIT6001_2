@@ -19,7 +19,10 @@ def main():
 	x = int(input('Enter a number x: '))
 	y = int(input('Enter a number y: '))
 	z = int(input('Enter a number z: '))
-	print(largeOdd(x, y, z))
+	if x % 2 != 0 or y % 2 != 0 or z % 2 != 0:
+		print(f'The largest odd number is {largeOdd(x, y, z)}')
+	else:
+		print(f'None of them are odd, the smallest value is {largeOdd(x, y, z)}')
 
 if __name__ == '__main__':
 	main()
