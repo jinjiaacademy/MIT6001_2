@@ -80,11 +80,34 @@
 |            range            |      |
 |         in operator         |      |
 |      PEP 8 style guide      |      |
+|   descrementing function    |      |
+|       guess-and-check       |      |
+|   exhaustive enumeration    |      |
+|        approximation        |      |
+|       total ordering        |      |
+|      bisection search       |      |
+|  successive approximation   |      |
+|       binary numbers        |      |
+|             bit             |      |
+|           switch            |      |
+|       floating point        |      |
+|     significant digits      |      |
+|          exponent           |      |
+|          precision          |      |
+|          rounding           |      |
+|       Newton-Raphson        |      |
+|         polynomial          |      |
+|         coefficient         |      |
+|           degree            |      |
+|            root             |      |
 |                             |      |
 |                             |      |
 |                             |      |
 |                             |      |
-|                             |      |
-|                             |      |
-|                             |      |
+
+
+
+
+
+
 
