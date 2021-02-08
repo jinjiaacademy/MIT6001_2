@@ -134,31 +134,31 @@
 |          lambda expression          |      |
 |               method                |      |
 |            dot notation             |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|                tuple                |      |
+|         multiple assignment         |      |
+|           iterable object           |      |
+|            type iterator            |      |
+|                list                 |      |
+|            mutable type             |      |
+|           immutable type            |      |
+|             id function             |      |
+|           object equality           |      |
+|             side effect             |      |
+|              aliasing               |      |
+|               cloning               |      |
+|            shallow copy             |      |
+|              deep copy              |      |
+|         list comprehension          |      |
+|        higher-order function        |      |
+|        whitespace character         |      |
+|                 set                 |      |
+|            hashable type            |      |
+|             dictionary              |      |
+|                keys                 |      |
+|                value                |      |
+|             view object             |      |
+|      dictionary comprehension       |      |
+|             book cipher             |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
