@@ -169,18 +169,18 @@
 |         divide-and-conquer          |      |
 |           global variable           |      |
 |           global constant           |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|               module                |      |
+|          import statement           |      |
+|        fully qualified names        |      |
+|       standard Python library       |      |
+|                files                |      |
+|             file handle             |      |
+|       writing to and reading        |      |
+|             from files              |      |
+|          newline character          |      |
+|      opening and closing files      |      |
+|           with statement            |      |
+|         appending to files          |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
