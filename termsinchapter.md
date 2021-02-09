@@ -159,16 +159,16 @@
 |             view object             |      |
 |      dictionary comprehension       |      |
 |             book cipher             |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|              recursion              |      |
+|              base case              |      |
+|     recursive (inductive) case      |      |
+|        inductive definition         |      |
+|             recurrence              |      |
+|           helper function           |      |
+|      short-circuit evaluation       |      |
+|         divide-and-conquer          |      |
+|           global variable           |      |
+|           global constant           |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
