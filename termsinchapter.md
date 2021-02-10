@@ -181,6 +181,29 @@
 |      opening and closing files      |      |
 |           with statement            |      |
 |         appending to files          |      |
+|               testing               |      |
+|              debugging              |      |
+|             test suite              |      |
+|         partition of inputs         |      |
+|          glass-box testing          |      |
+|          black-box testing          |      |
+|        path-complete testing        |      |
+|            unit testing             |      |
+|         integration testing         |      |
+|         functional testing          |      |
+|  software quality assurance (SQA)   |      |
+|             test driver             |      |
+|              test stub              |      |
+|         regression testing          |      |
+|                 bug                 |      |
+|              overt bug              |      |
+|             covert bug              |      |
+|           persistent bug            |      |
+|          intermittent bug           |      |
+|        defensive programming        |      |
+|              debuggers              |      |
+|          confirmation bias          |      |
+|          bisection search           |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
@@ -194,16 +217,8 @@
 |                                     |      |
 |                                     |      |
 |                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+
+
 
 
 
