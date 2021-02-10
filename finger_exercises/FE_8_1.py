@@ -8,9 +8,9 @@ def sum_digits(s):
 	'''Assumes s is a string
 	Returns the sum of the decimal digits in s
 	For example, if s is 'a2b3c' it returns 5'''
+	total = 0
 	try:
 		type(s) == str
-		total = 0
 		for i in s:
 			if i in '1234567890':
 				total += int(i)
@@ -18,5 +18,7 @@ def sum_digits(s):
 	except TypeError:
 		print('Unsuported type, please enter a string')
 	
+	
+	
 
-print(sum_digits((1,)))
+print(sum_digits(123))
