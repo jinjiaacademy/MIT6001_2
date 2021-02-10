@@ -204,16 +204,16 @@
 |              debuggers              |      |
 |          confirmation bias          |      |
 |          bisection search           |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|             exceptions              |      |
+|        raising an exception         |      |
+|         unhandled exception         |      |
+|          handled exception          |      |
+|        try-except construct         |      |
+|        catch (an exception)         |      |
+|        polymorphic functions        |      |
+|         first-class objects         |      |
+|           raise statement           |      |
+|            assertations             |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
