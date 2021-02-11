@@ -35,8 +35,9 @@ class Int_set(object):
 		'''Other is an Int_set
 		mutates self so that it contains exactly the elements in self
 		plus the elements in other'''
-		list(set(self._vals + other)) 
-
+		for e in other:
+			if e not in self._vals:
+				self._vals.append(e) 
 
 	def __str__(self):
 		'''Returns a string representation of self'''
