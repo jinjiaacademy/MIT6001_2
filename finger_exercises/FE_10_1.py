@@ -38,8 +38,8 @@ class Int_set(object):
         for e in other:
             if e not in self._vals:
                 self._vals.append(e)
-        '''Replace the union method you added to Int_set by a method 
-		that allows clients of Int_set to use the ­+ operator to denote 
+        '''Replace the union method you added to Int_set by a method
+		that allows clients of Int_set to use the ­+ operator to denote
 		set union.'''
         # new_Int_set = Int_set()
         # new_Int_set._vals = [{self._vals + other._vals}]
