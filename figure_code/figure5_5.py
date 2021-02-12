@@ -1,8 +1,9 @@
 def apply_to_each(L, f):
-	'''Assumes L is a list, f is a funciton
-	Mutates L by replacing each element, e, of L by f(e)'''
-	for i in range(len(L)):
-		L[i] = f(L[i])
+    '''Assumes L is a list, f is a funciton
+    Mutates L by replacing each element, e, of L by f(e)'''
+    for i in range(len(L)):
+        L[i] = f(L[i])
+
 
 L = [1, -2, 3.33]
 print('L =', L)
