@@ -41,9 +41,6 @@ class Person(object):
             return self._name < other._name
         return self._last_name < other._last_name
 
-
-
-
     def __str__(self):
         '''Returns self's name'''
         return self._name
