@@ -48,7 +48,7 @@ class Person(object):
 
 class MIT_person(Person):
 
-    _next_id_num = 0 # identification number
+    _next_id_num = 0  # identification number
 
     def __init__(self, name):
         super().__init__(name)
@@ -58,5 +58,25 @@ class MIT_person(Person):
     def get_id_num(self):
         return self._id_num
 
+    def is_student(self):
+        return isinstance(self, Student)
+
     def __lt__(self, other):
         return self._id_num < other._id_num
+
+
+class Student(MIT_person):
+    pass
+
+
+class UG(Student):
+    def __init__(self, name, class_year):
+        super().__init__(name)
+        self._year = class_year
+
+    def get_class(self):
+        return self._year
+
+
+class Grad(Student):
+    pass
