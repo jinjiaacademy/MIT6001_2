@@ -5,19 +5,22 @@ and returns the number of days between Canadian Thanksgiving and Xmas.
 '''
 import calendar as cal
 
+
 def find_thanksgiving_canada(year):
-	month = cal.monthcalendar(year, 10)
-	if month[0][cal.MONDAY] != 0:
-		thanksgiving = month[1][cal.MONDAY]
-	else:
-		thanksgiving = month[2][cal.MONDAY]
-	return thanksgiving
+    month = cal.monthcalendar(year, 10)
+    if month[0][cal.MONDAY] != 0:
+        thanksgiving = month[1][cal.MONDAY]
+    else:
+        thanksgiving = month[2][cal.MONDAY]
+    return thanksgiving
+
 
 def main():
-	year = int(input('Enter a year: '))
-	thanksgiving_day_canada = find_thanksgiving_canada(year)
-	days_thanks_xmas = 31 - thanksgiving_day_canada + 30 + 24
-	print(f'In the year of {year}, there are {days_thanks_xmas} days between thanksgiving and Xmas in Canada.')
+    year = int(input('Enter a year: '))
+    thanksgiving_day_canada = find_thanksgiving_canada(year)
+    days_thanks_xmas = 31 - thanksgiving_day_canada + 30 + 24
+    print(f'In the year of {year}, there are {days_thanks_xmas} days between thanksgiving and Xmas in Canada.')
+
 
 if __name__ == '__main__':
-	main()	
+    main()
