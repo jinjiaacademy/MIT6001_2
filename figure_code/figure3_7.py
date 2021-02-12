@@ -4,5 +4,5 @@ k = int(input('Enter an integer to calculate its square root: '))
 epsilon = 0.01
 guess = k/2
 while abs(guess**2 - k) >= epsilon:
-	guess = guess - (((guess**2) - k)/(2 * guess))
+    guess = guess - (((guess**2) - k)/(2 * guess))
 print('Square root of', k, 'is about', guess)
