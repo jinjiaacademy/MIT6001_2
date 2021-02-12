@@ -5,4 +5,3 @@ from the top floor. If it broke, he would go down a floor, and try it again. He 
 do this until the egg did not break. At worst, this method requireds 102 eggs. Implement
 a method that at worst uses seven eggs.
 '''
- 
