@@ -122,6 +122,19 @@ class Grades(object):
         for s in self._students:
             yield s
 
+    def get_students_above(self, grade):
+        '''Return the students a mean grade > g one at a time'''
+        for s in course.get_students():
+            tot = 0.0
+            num_grades = 0
+            for g in course.get_grades(s):
+                tot += g
+                num_grades += 1
+            try:
+                average = tot/num_grades
+                yield average
+            except ZeroDivisionError:
+                print('no grades available')
 
 def grade_report(course):
     '''Assumes course is of type Grades'''
@@ -156,3 +169,8 @@ six_hundred.add_grade(g1, 25)
 six_hundred.add_grade(g2, 100)
 six_hundred.add_student(ug3)
 print(grade_report(six_hundred))
+# book = Grades()
+# book.add_student(Grad('Julie'))
+# book.add_student(Grad('Lisa'))
+# for s in book.get_students():
+#     print(s)
