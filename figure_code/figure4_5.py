@@ -2,6 +2,7 @@ def f(x):
     def g():
         x = 'abc'
         print('x =', x)
+
     def h():
         z = x
         print('z =', z)
@@ -11,6 +12,7 @@ def f(x):
     g()
     print('x =', x)
     return g
+
 
 x = 3
 z = f(x)
