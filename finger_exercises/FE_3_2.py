@@ -7,10 +7,10 @@ x = int(input('Enter an integer: '))
 
 result = []
 for pwr in range(2, 6):
-	for root in range(x):
-		if root ** pwr == x:
-			result.append((root, pwr))
+    for root in range(x):
+        if root ** pwr == x:
+            result.append((root, pwr))
 if result:
-	print(result)
+    print(result)
 else:
-	print('No such pair of integers exists.')
+    print('No such pair of integers exists.')
