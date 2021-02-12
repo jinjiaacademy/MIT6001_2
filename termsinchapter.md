@@ -214,6 +214,63 @@
 |         first-class objects         |      |
 |           raise statement           |      |
 |            assertations             |      |
+|     object-oriented programming     |      |
+|         abstract data type          |      |
+|              interface              |      |
+|         abstraction barrier         |      |
+|            decomposition            |      |
+|             abstraction             |      |
+|                class                |      |
+|          class definition           |      |
+|          method attribute           |      |
+|          class attributes           |      |
+|           class instance            |      |
+|         attribute reference         |      |
+|             __ methods              |      |
+|       magic (dunder) methods        |      |
+|           data attribute            |      |
+|           class variable            |      |
+|          instance variable          |      |
+|          class definition           |      |
+|      representation invariant       |      |
+|             inheritance             |      |
+|              subclass               |      |
+|             superclass              |      |
+|             overriding              |      |
+|             isinstance              |      |
+|       substitution principle        |      |
+|            encapsulation            |      |
+|         information hiding          |      |
+|               private               |      |
+|              generator              |      |
+|           abstract class            |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
