@@ -1,6 +1,8 @@
 '''
 What is the asymptotic complexity of each of the following functions?
 '''
+
+
 def g(L, e):
     '''L a list of ints, e is an int'''
     for i in range(100):
@@ -9,7 +11,9 @@ def g(L, e):
                 return True
     return False
 
+
 '''Answer: 100 * len(L)'''
+
 
 def h(L, e):
     '''L a list of ints, e is an int'''
