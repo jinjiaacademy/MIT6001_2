@@ -244,6 +244,31 @@
 |               private               |      |
 |              generator              |      |
 |           abstract class            |      |
+|        conceptual complexity        |      |
+|      computational complexity       |      |
+|        random access machine        |      |
+|         computational step          |      |
+|        best-case complexity         |      |
+|        worst-case complexity        |      |
+|       average-case complexity       |      |
+|      expected-case complexity       |      |
+|             upper bound             |      |
+|         asymptotic notation         |      |
+|           Big O notation            |      |
+|           order of growth           |      |
+|         Big Theta notation          |      |
+|             lower bound             |      |
+|             tight bound             |      |
+|            constant time            |      |
+|          logarithmic time           |      |
+|             linear time             |      |
+|           log-linear time           |      |
+|           polynomial time           |      |
+|           quadratic time            |      |
+|          exponential time           |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
