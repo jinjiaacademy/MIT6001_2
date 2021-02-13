@@ -17,5 +17,6 @@ def f(x):
     print('Number of additions so far', ans)
     return ans
 
+
 print(f(10))
 print(f(1000))
