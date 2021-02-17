@@ -266,19 +266,40 @@
 |           polynomial time           |      |
 |           quadratic time            |      |
 |          exponential time           |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|          search algorithm           |      |
+|            search space             |      |
+|               pointer               |      |
+|             indirection             |      |
+|            binary search            |      |
+|          wrapper function           |      |
+|        amortized complexity         |      |
+|           selection sort            |      |
+|           loop invariant            |      |
+|    divide and conquer algorithms    |      |
+|           recursive base            |      |
+|             merge sort              |      |
+|            in-place sort            |      |
+|              quicksort              |      |
+|               timsort               |      |
+|             stable sort             |      |
+|             hash table              |      |
+|            hash function            |      |
+|         many-to-one mapping         |      |
+|              collision              |      |
+|        uniform distribution         |      |
+|             hash bucket             |      |
+|                plot                 |      |
+|             Matplotlib              |      |
+|               figure                |      |
+|           current figure            |      |
+|              reParams               |      |
+|                array                |      |
+|                numpy                |      |
+|          interactive plot           |      |
+|              text box               |      |
+|            herd immunity            |      |
+|               slider                |      |
+|        flattening the curve         |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
