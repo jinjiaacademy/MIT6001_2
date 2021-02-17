@@ -1,6 +1,7 @@
 import numpy as np
 import mmatplotlib.pyplot as plt
 
+
 def find_payment(loan, r, m):
     '''Assumes: loan and r are floats, m an int
     Returns the monthly payment for a mortgage of size
@@ -51,3 +52,34 @@ class Mortgage(object):
         equity_aquired = equity_aquired - np.array(self._outstanding)
         net = np.array(tot_pd) - equity_aquired
         plt.plot(net, style, label=self._legend)
+
+
+class Fixed(Mortgage):
+    def __init__(self, loan, r, months):
+        Mortgage.__init__(self, loan, r, months)
+        self._legend = f'Fixed, {r*100:.1f}%'
+
+
+class Fixed_with_pts(Mortgage):
+    def __init__(self, loan, r, months, pts):
+        Mortgage.__init__(self, loan, r, months)
+        self._pts = pts
+        self._paid = [loan*(pts/100)]
+        self._legend = f'Fixed, {r*100:.1f}%, {pts} points'
+
+class Two_rate(Mortgage):
+    def __init__(self, loan, r, months, teaser_rate, teaser_months):
+        Mortgage.__init__(self, loan, teaser_rate, months)
+        self._teaser_months = teaser_months
+        self._teaser_rate = teaser_rate
+        self._nextRate = r/12
+        sefl._legend = (f'{100*teaser_rate:.1f}% for' +
+            f'{self._teaser_months} months, then {100*r:.1f}%')
+
+    def make_payment(self):
+        if len(self._paid) == self._teaser_months + 1:
+            self._rate = self._nextRate
+            self._payment = find_payment(self._outstanding[-1],
+                            self._rate,
+                            self._months - self._teaser_months)
+        Mortgage.make_payment(self)
