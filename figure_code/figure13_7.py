@@ -1,5 +1,5 @@
 import numpy as np
-import mmatplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 def find_payment(loan, r, m):
@@ -67,19 +67,68 @@ class Fixed_with_pts(Mortgage):
         self._paid = [loan*(pts/100)]
         self._legend = f'Fixed, {r*100:.1f}%, {pts} points'
 
+
 class Two_rate(Mortgage):
     def __init__(self, loan, r, months, teaser_rate, teaser_months):
         Mortgage.__init__(self, loan, teaser_rate, months)
         self._teaser_months = teaser_months
         self._teaser_rate = teaser_rate
         self._nextRate = r/12
-        sefl._legend = (f'{100*teaser_rate:.1f}% for' +
-            f'{self._teaser_months} months, then {100*r:.1f}%')
+        self._legend = (f'{100*teaser_rate:.1f}% for' +
+                        f'{self._teaser_months} months, then {100*r:.1f}%')
 
     def make_payment(self):
         if len(self._paid) == self._teaser_months + 1:
             self._rate = self._nextRate
             self._payment = find_payment(self._outstanding[-1],
-                            self._rate,
-                            self._months - self._teaser_months)
+                                         self._rate,
+                                         self._months - self._teaser_months)
         Mortgage.make_payment(self)
+
+
+def compare_mortgages(amt, years, fixed_rate, pts, pts_rate,
+                      var_rate1, var_rate2, var_months):
+    tot_months = years*12
+    fixed1 = Fixed(amt, fixed_rate, tot_months)
+    fixed2 = Fixed_with_pts(amt, pts_rate, tot_months, pts)
+    two_rate = Two_rate(amt, var_rate2, tot_months, var_rate1, var_months)
+    morts = [fixed1, fixed2, two_rate]
+    for m in range(tot_months):
+        for mort in morts:
+            mort.make_payment()
+    plot_mortgages(morts, amt)
+
+
+def plot_mortgages(morts, amt):
+    def label_plot(figure, title, x_label, y_label):
+        plt.figure(figure)
+        plt.title(title)
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
+        plt.legend(loc='best')
+    styles = ['k-', 'k-.', 'k:']
+    # Give names to figure numbers
+    payments, cost, balance, net_cost = 0, 1, 2, 3
+    for i in range(len(morts)):
+        plt.figure(payments)
+        morts[i].plot_payments(styles[i])
+        plt.figure(cost)
+        morts[i].plot_tot_pd(styles[i])
+        plt.figure(balance)
+        morts[i].plot_balance(styles[i])
+        plt.figure(net_cost)
+        morts[i].plot_net(styles[i])
+    label_plot(payments, f'Monthly Payments of ${amt:,} Mortages',
+               'Months', 'Monthly Payments')
+    label_plot(cost, f'Cash Outlay of ${amt:,} Mortages',
+               'Months', 'Total Payments')
+    label_plot(balance, f'Balance Remaining of ${amt:,} Mortages',
+               'Months', 'Remaining Loan Balance of $')
+    label_plot(net_cost, f'Net Cost of ${amt:,} Mortages',
+               'Months', 'Payments - Equity $')
+    plt.show()
+
+
+compare_mortgages(amt=200000, years=30, fixed_rate=0.07,
+                  pts=3.25, pts_rate=0.05, var_rate1=0.045,
+                  var_rate2=0.095, var_months=48)
