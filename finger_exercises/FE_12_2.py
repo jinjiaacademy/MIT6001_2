@@ -3,6 +3,8 @@ Use merge_sort to sort a list to tuples of integers.
 The sorting order should be determined by the sum of the integers in the
 tuple. For example, (5, 2) should precede (1, 8) and follow (1, 2, 3)
 '''
+
+
 def merge(left, right, compare):
     '''Assumes left and right are sorted lists and
     compare defines an ordering on the elements.
@@ -38,3 +40,9 @@ def merge_sort(L, compare=lambda x, y: x < y):
         left = merge_sort(L[:middle], compare)
         right = merge_sort(L[middle:], compare)
         return merge(left, right, compare)
+
+def compare_sum(tup1, tup2):
+    return sum(tup1) < sum(tup2)
+
+L = [(5, 2), (1, 8), (1, 2, 3)]
+print(merge_sort(L, compare_sum))
