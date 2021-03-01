@@ -300,19 +300,37 @@
 |            herd immunity            |      |
 |               slider                |      |
 |        flattening the curve         |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|        optimization problem         |      |
+|         objective function          |      |
+|         set of constraints          |      |
+|          knapsack problem           |      |
+|          greedy algorithm           |      |
+|          optimal solution           |      |
+|        0/1 knapsack problem         |      |
+|           locally optimal           |      |
+|          globally optimal           |      |
+|     continuous knapsack problem     |      |
+|                graph                |      |
+|            node (vertex)            |      |
+|             edge (arc)              |      |
+|      directed graph (digraph)       |      |
+|        source (parent) node         |      |
+|      destination (child) node       |      |
+|                path                 |      |
+|                cycle                |      |
+|            cyclic graph             |      |
+|            acyclic graph            |      |
+|            graph theory             |      |
+|           weighted graph            |      |
+|          adjacency matrix           |      |
+|           adjacency list            |      |
+|            shortest path            |      |
+|       shortest weighted path        |      |
+|               min cut               |      |
+|           maximum clique            |      |
+|       depth-fist search (DFS)       |      |
+|            backtracking             |      |
+|     breadth-first search (BFS)      |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
