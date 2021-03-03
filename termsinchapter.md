@@ -331,6 +331,23 @@
 |       depth-fist search (DFS)       |      |
 |            backtracking             |      |
 |     breadth-first search (BFS)      |      |
+|         dynamic programming         |      |
+|        optimal substructure         |      |
+|       overlapping subproblems       |      |
+|            momorization             |      |
+|           tabular method            |      |
+|         rooted binary tree          |      |
+|                root                 |      |
+|                leaf                 |      |
+|            decision tree            |      |
+|    pseudo-polynomial complexity     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
