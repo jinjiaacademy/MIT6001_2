@@ -1,4 +1,6 @@
 import random
+import matplotlib.pyplot as plt
+import numpy as np
 
 
 class Location(object):
@@ -67,6 +69,18 @@ class Usual_drunk(Drunk):
         return random.choice(step_choices)
 
 
+class Cold_drunk(Drunk):
+    def take_step(self):
+        stepChoices = [(0.0, 1.0), (0.0, -2.0), (1.0, 0.0), (-1.0, 0.0)]
+        return random.choice(stepChoices)
+
+
+class EW_drunk(Drunk):
+    def take_step(self):
+        stepChoices = [(1.0, 0.0), (-1.0, 0.0)]
+        return random.choice(stepChoices)
+
+
 def walk(f, d, num_steps):
     '''Assumes: f a Field, d a Drunk in f, and num_steps an int >= 0.
     moves d num_steps times; returns the distance between the
@@ -104,4 +118,10 @@ def drunk_test(walk_lengths, num_trials, d_class):
               f'{max(distances)}, Min = {min(distances)}')
 
 
-drunk_test((10, 100, 1000, 10000), 100, Usual_drunk)
+def sim_all(drunk_kinds, walk_lengths, num_trials):
+    for d_class in drunk_kinds:
+        drunk_test(walk_lengths, num_trials, d_class)
+
+
+# drunk_test((10, 100, 1000, 10000), 100, Usual_drunk)
+sim_all((Usual_drunk, Cold_drunk, EW_drunk), (100, 1000), 10)
