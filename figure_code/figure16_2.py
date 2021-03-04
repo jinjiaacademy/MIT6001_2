@@ -123,5 +123,48 @@ def sim_all(drunk_kinds, walk_lengths, num_trials):
         drunk_test(walk_lengths, num_trials, d_class)
 
 
+class style_iterator(object):
+    def __init__(self, styles):
+        self.index = 0
+        self.styles = styles
+
+    def next_style(self):
+        result = self.styles[self.index]
+        if self.index == len(self.styles) - 1:
+            self.index = 0
+        else:
+            self.index += 1
+        return result
+
+
+def sim_drunk(num_trials, d_class, walk_lengths):
+    meanDistances = []
+    for num_steps in walk_lengths:
+        print('Starting simulation of', num_steps, 'steps')
+        trials = sim_walks(num_steps, num_trials, d_class)
+        mean = sum(trials)/len(trials)
+        meanDistances.append(mean)
+    return meanDistances
+
+
+def sim_all_plot(drunk_kinds, walk_lengths, num_trials):
+    style_choice = style_iterator(('m-', 'r:', 'k-.'))
+    for d_class in drunk_kinds:
+        cur_style = style_choice.next_style()
+        print('Starting simulation of', d_class.__name__)
+        means = sim_drunk(num_trials, d_class, walk_lengths)
+        plt.plot(walk_lengths, means, cur_style,
+                 label=d_class.__name__)
+    plt.title(f'Mean Distance from Origin ({num_trials} trials)')
+    plt.xlabel('Number of Steps')
+    plt.ylabel('Distance from Origin')
+    plt.legend(loc='best')
+    plt.semilogx()
+    plt.semilogy()
+    plt.show()
+
+
 # drunk_test((10, 100, 1000, 10000), 100, Usual_drunk)
-sim_all((Usual_drunk, Cold_drunk, EW_drunk), (100, 1000), 10)
+# sim_all((Usual_drunk, Cold_drunk, EW_drunk), (100, 1000), 10)
+sim_all_plot((Usual_drunk, Cold_drunk, EW_drunk),
+             (10, 100, 1000, 10000, 100000), 100)
