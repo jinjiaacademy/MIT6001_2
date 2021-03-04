@@ -81,6 +81,26 @@ class EW_drunk(Drunk):
         return random.choice(stepChoices)
 
 
+class Odd_field(Field):
+    def __init__(self, numHoles, x_range, y_range):
+        Field.__init__(self)
+        self.wormholes = {}
+        for w in range(numHoles):
+            x = random.randint(-x_range, x_range)
+            y = random.randint(-y_range, y_range)
+            newX = random.randint(-x_range, x_range)
+            newY = random.randint(-y_range, y_range)
+            newLoc = Location(newX, newY)
+            self.wormholes[(x, y)] = newLoc
+
+    def move_drunk(self, drunk):
+        Field.move_drunk(self, drunk)
+        x = self._drunks[drunk].get_x()
+        y = self._drunks[drunk].get_y()
+        if (x, y) in self.wormholes:
+            self._drunks[drunk] = self.wormholes[(x, y)]
+
+
 def walk(f, d, num_steps):
     '''Assumes: f a Field, d a Drunk in f, and num_steps an int >= 0.
     moves d num_steps times; returns the distance between the
@@ -196,9 +216,11 @@ def plot_locs(drunk_kinds, num_steps, num_trials):
     plt.legend(loc='best')
     plt.show()
 
+
 def trace_walk(drunk_kinds, num_steps):
     style_choice = style_iterator(('k+', 'r^', 'mo'))
-    f = Field()
+    # f = Field()
+    f = Odd_field(1000, 100, 200)
     for d_class in drunk_kinds:
         d = d_class()
         f.add_drunk(d, Location(0, 0))
@@ -220,8 +242,10 @@ def trace_walk(drunk_kinds, num_steps):
     plt.legend(loc='best')
     plt.show()
 
+
 # drunk_test((10, 100, 1000, 10000), 100, Usual_drunk)
 # sim_all((Usual_drunk, Cold_drunk, EW_drunk), (100, 1000), 10)
 # sim_all_plot((Usual_drunk, Cold_drunk, EW_drunk),
 #              (10, 100, 1000, 10000, 100000), 100)
-plot_locs((Usual_drunk, Cold_drunk, EW_drunk), 100, 200)
+# plot_locs((Usual_drunk, Cold_drunk, EW_drunk), 100, 200)
+trace_walk((Usual_drunk, Cold_drunk, EW_drunk), 500)
