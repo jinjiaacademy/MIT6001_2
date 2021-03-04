@@ -21,4 +21,3 @@ def trace_walk(drunk_kinds, num_steps):
     plt.ylabel('Steps North/South of Origin')
     plt.legend(loc='best')
     plt.show()
-
