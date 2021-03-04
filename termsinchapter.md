@@ -341,12 +341,12 @@
 |                leaf                 |      |
 |            decision tree            |      |
 |    pseudo-polynomial complexity     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|         stochastic process          |      |
+|          simulation model           |      |
+|             random walk             |      |
+|             smoke test              |      |
+|         biased random walks         |      |
+|          logarithmic scale          |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
