@@ -247,9 +247,29 @@ def make_plots(num_flips1, num_flips2, num_trials):
     plt.show()
 
 
+def show_error_bars(min_exp, max_exp, num_trials):
+    '''Assumes min_exp and max_exp positive ints; min_exp < max_exp
+    num_trials a positive integer
+    Plots mean fraction of heads with error bars'''
+    means, sds, x_vals = [], [], []
+    for exp in range(min_exp, max_exp+1):
+        x_vals.append(2**exp)
+        frac_heads, mean, sd = flip_sim(2**exp, num_trials)
+        means.append(mean)
+        sds.append(sd)
+    plt.errorbar(x_vals, means, yerr=1.96*np.array(sds))
+    plt.semilogx()
+    plt.title('Mean Fraction of Heads ('
+              + str(num_trials) + ' trials)')
+    plt.xlabel('Number of flips per trial')
+    plt.ylabel('Fraction of heads & 95% condifence')
+    plt.show()
+
+
 # print('Mean =', flip_sim(100, 10000))
 # regress_to_mean(15, 50)
 # random.seed(0)
 # flip_plot(4, 20)
 # flip_plot2(4, 20, 20)
-make_plots(100, 1000, 10000)
+# make_plots(100, 1000, 10000)
+show_error_bars(3, 10, 100)
