@@ -347,6 +347,105 @@
 |             smoke test              |      |
 |         biased random walks         |      |
 |          logarithmic scale          |      |
+|        causal nondeterminism        |      |
+|      predictive nondeterminism      |      |
+|        deterministic program        |      |
+|        pseudorandom numbers         |      |
+|          independent event          |      |
+|             probability             |      |
+|         multiplicative law          |      |
+|       inferential statistics        |      |
+|        law of large numbers         |      |
+|         Bernoulli's theorem         |      |
+|          gambler's fallacy          |      |
+|       regression to the mean        |      |
+|           linear scaling            |      |
+|              variance               |      |
+|         standard deviation          |      |
+|      coefficient of variation       |      |
+|              histogram              |      |
+|       frequency distribution        |      |
+|      probability distribution       |      |
+|      discrete random variable       |      |
+|     continuous random variable      |      |
+|  discrete probability distribution  |      |
+| continuous probability distribution |      |
+| probability density function (PDF)  |      |
+|   normal (Gaussian) distribution    |      |
+|             bell curve              |      |
+|          area under curve           |      |
+|     empirical (68-95-99.7) rule     |      |
+|         confidence interval         |      |
+|          confidence level           |      |
+|             error bars              |      |
+|   continuous uniform distribution   |      |
+|      rectangular distribution       |      |
+|    discrete uniform distribution    |      |
+|   categorical (nominal) variable    |      |
+|        binomial distribution        |      |
+|        binomial coefficient         |      |
+|           Bernoulli trial           |      |
+|      multinomial distribution       |      |
+|      exponential distribution       |      |
+|             memoryless              |      |
+|          exponential decay          |      |
+|              half-life              |      |
+|            rate of decay            |      |
+|         exponential growth          |      |
+|       geometric distribution        |      |
+|            Benford's Law            |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
