@@ -28,6 +28,8 @@ class Craps_game(object):
         self.dp_wins, self.dp_losses, self.dp_pushes = 0, 0, 0
 
     def play_hand(self):
+        # An alternative, faster, implementation of play_hand
+        points_dict = {4: 1/3, 5: 2/5, 6: 5/11, 8: 5/11, 9: 2/5, 10: 1/3}
         throw = roll_die() + roll_die()
         if throw == 7 or throw == 11:
             self.pass_wins += 1
@@ -39,17 +41,24 @@ class Craps_game(object):
             else:
                 self.dp_wins += 1
         else:
-            point = throw
-            while True:
-                throw = roll_die() + roll_die()
-                if throw == point:
-                    self.pass_wins += 1
-                    self.dp_losses += 1
-                    break
-                elif throw == 7:
-                    self.pass_losses += 1
-                    self.dp_wins += 1
-                    break
+            if random.random() <= points_dict[throw]:
+                self.pass_wins += 1
+                self.dp_losses += 1
+            else:
+                self.pass_losses += 1
+                self.dp_wins += 1
+            # # traditional way
+            # point = throw
+            # while True:
+            #     throw = roll_die() + roll_die()
+            #     if throw == point:
+            #         self.pass_wins += 1
+            #         self.dp_losses += 1
+            #         break
+            #     elif throw == 7:
+            #         self.pass_losses += 1
+            #         self.dp_wins += 1
+            #         break
 
     def pass_results(self):
         return (self.pass_wins, self.pass_losses)
@@ -88,4 +97,4 @@ def craps_sim(hands_per_game, num_games):
 
 
 # check_pascal(1000000)
-craps_sim(1000000, 10)
+craps_sim(100000000, 10)
