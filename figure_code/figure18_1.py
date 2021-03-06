@@ -3,8 +3,9 @@ import numpy as np
 
 
 def roll_die():
-    # return random.choice([1, 2, 3, 4, 5, 6])
-    return random.choice([1, 1, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6])
+    return random.choice([1, 2, 3, 4, 5, 6])
+    # # Cheating dice:
+    # return random.choice([1, 1, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6])
 
 
 def check_pascal(num_trials):
