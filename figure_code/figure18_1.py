@@ -97,4 +97,4 @@ def craps_sim(hands_per_game, num_games):
 
 
 # check_pascal(1000000)
-craps_sim(100000000, 10)
+craps_sim(1000000, 10)
