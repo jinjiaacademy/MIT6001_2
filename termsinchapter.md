@@ -394,18 +394,18 @@
 |         exponential growth          |      |
 |       geometric distribution        |      |
 |            Benford's Law            |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|       Monte Carlo simulation        |      |
+|     return on investment (ROI)      |      |
+|            table lookup             |      |
+|         time/space tradeoff         |      |
+|          descriptive model          |      |
+|         prescriptive model          |      |
+|      deterministic simulation       |      |
+|        stochastic simulation        |      |
+|            static model             |      |
+|            dynamic model            |      |
+|           discrete model            |      |
+|          continuous model           |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
