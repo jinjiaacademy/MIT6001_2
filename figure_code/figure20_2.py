@@ -29,8 +29,8 @@ def plot_data(input_file):
 
 def fit_data(input_file):
     masses, distances = get_data(input_file)
-    distances = np.array(distances)
-    forces = np.array(masses)*9.81
+    distances = np.array(distances[:-6])
+    forces = np.array(masses[:-6])*9.81
     plt.plot(forces, distances, 'ko',
              label='Measured displacements')
     plt.title('Measured Displacement of Spring')
