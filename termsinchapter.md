@@ -406,16 +406,16 @@
 |            dynamic model            |      |
 |           discrete model            |      |
 |          continuous model           |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|             population              |      |
+|               sample                |      |
+|             sample size             |      |
+|        probability sampling         |      |
+|        simple random sample         |      |
+|         stratified sampling         |      |
+|             sample mean             |      |
+|           population mean           |      |
+|        central limit theorem        |      |
+|      standard error (SE, SEM)       |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
