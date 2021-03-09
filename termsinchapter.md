@@ -420,16 +420,16 @@
 |                                     |      |
 |                                     |      |
 |                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|              DataFrame              |      |
+|                 row                 |      |
+|               series                |      |
+|                index                |      |
+|                name                 |      |
+|              CSV file               |      |
+|         shape (of ndarray)          |      |
+|          Boolean indexing           |      |
+|        correlation of series        |      |
+|      moving (rolling) average       |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
