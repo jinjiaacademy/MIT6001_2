@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def get_trajectory_data(file_name):
     distances = []
     heights1, heights2, heights3, heights4 = [], [], [], []
@@ -21,12 +22,12 @@ def process_trajectories(file_name):
     num_trials = len(heights)
     distances = np.array(distances)
     # Get array containing mean height at each distance
-    tot_heights = np.array([0]*len(heights))
+    tot_heights = np.array([0]*len(distances))
     for h in heights:
         tot_heights = tot_heights + np.array(h)
     mean_heights = tot_heights/len(heights)
     plt.title('Trajectory of Projectile (Mean of '
-              + str(num_trials) + ' Trials')
+              + str(num_trials) + ' Trials)')
     plt.xlabel('Inches from Launch Point')
     plt.ylabel('Inches Above Launch Point')
     plt.plot(distances, mean_heights, 'ko')
