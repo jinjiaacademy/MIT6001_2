@@ -416,6 +416,23 @@
 |           population mean           |      |
 |        central limit theorem        |      |
 |      standard error (SE, SEM)       |      |
+|             Hooke's law             |      |
+|            elastic limit            |      |
+|           spring constant           |      |
+|            curve fitting            |      |
+|            least squares            |      |
+|          linear regression          |      |
+|        polynomial regression        |      |
+|             overfitting             |      |
+|           goodness of fit           |      |
+| coefficient of determination (R^2)  |      |
+|            training set             |      |
+|              test set               |      |
+|             holdout set             |      |
+|          cross validation           |      |
+|                                     |      |
+|                                     |      |
+|                                     |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
