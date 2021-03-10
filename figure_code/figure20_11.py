@@ -2,6 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+def r_squared(measured, predicted):
+    '''Assumes measured a one-dimensional array of measured values
+    predicted a one-dimentional array of predicted values
+    Returns coefficient of determination'''
+    estimated_error = ((predicted - measured)**2).sum()
+    mean_of_measured = measured.sum()/len(measured)
+    variability = ((measured - mean_of_measured)**2).sum()
+    return 1 - estimated_error/variability
+
+
 def get_trajectory_data(file_name):
     distances = []
     heights1, heights2, heights3, heights4 = [], [], [], []
@@ -34,11 +44,27 @@ def process_trajectories(file_name):
     fit = np.polyfit(distances, mean_heights, 1)
     altitudes = np.polyval(fit, distances)
     plt.plot(distances, altitudes, 'b', label='Linear Fit')
+    print('r**2 of linear fit =', r_squared(mean_heights, altitudes))
     fit = np.polyfit(distances, mean_heights, 2)
     altitudes = np.polyval(fit, distances)
     plt.plot(distances, altitudes, 'k:', label='Quadratic Fit')
+    print('r**2 of quadratic fit =', r_squared(mean_heights, altitudes))
     plt.legend()
     plt.show()
+    get_horizontal_speed(fit, distances[-1], distances[0])
+
+
+def get_horizontal_speed(quad_fit, min_x, max_x):
+    '''Assumes quad_fit has coefficients of a quadratic polynomial
+    min_x and max_x are distances in inches
+    Returns horizontal speed in feet per second'''
+    inches_per_foot = 12
+    x_mid = (max_x - min_x)/2
+    a, b, c = quad_fit[0], quad_fit[1], quad_fit[2]
+    y_peak = a*x_mid**2 + b*x_mid + c
+    g = 32.16*inches_per_foot
+    t = (2*y_peak/g)**0.5
+    print('Horizontal speed =', int(x_mid/(t*inches_per_foot)), 'feet/sec')
 
 
 process_trajectories('launcherData.csv')
