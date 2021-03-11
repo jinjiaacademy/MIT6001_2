@@ -431,12 +431,21 @@
 |             holdout set             |      |
 |          cross validation           |      |
 |                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|                GIGO                 |      |
+|     assumption of independence      |      |
+|              bar chart              |      |
+|             correlation             |      |
+|              causation              |      |
+|          lurking variable           |      |
+|          non-response bias          |      |
+|  convenience (accidental) sampling  |      |
+|       infection-fatality rate       |      |
+|         case-fatality rate          |      |
+|           cherry picking            |      |
+|          prospective study          |      |
+|         retrospective study         |      |
+|         regression fallacy          |      |
+|          treatment effect           |      |
 |              DataFrame              |      |
 |                 row                 |      |
 |               series                |      |
