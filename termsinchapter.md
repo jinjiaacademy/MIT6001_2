@@ -456,25 +456,25 @@
 |          Boolean indexing           |      |
 |        correlation of series        |      |
 |      moving (rolling) average       |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|    statistical machine learning     |      |
+|           generalization            |      |
+|            training data            |      |
+|           feature vector            |      |
+|         supervised learning         |      |
+|          regression models          |      |
+|        classification models        |      |
+|                label                |      |
+|        unsupervised learning        |      |
+|           latent variable           |      |
+|             clustering              |      |
+|     signal-to-noise ratio (SNR)     |      |
+|         feature engineering         |      |
+|      dimensionality (of data)       |      |
+|          feature selection          |      |
+|         Minkowski distance          |      |
+|         triangle inequality         |      |
+|         Euclidean distance          |      |
+|         Manhattan distance          |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
