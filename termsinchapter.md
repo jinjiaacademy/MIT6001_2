@@ -475,7 +475,15 @@
 |         triangle inequality         |      |
 |         Euclidean distance          |      |
 |         Manhattan distance          |      |
-|                                     |      |
+|           Euclidean mean            |      |
+|            dissimilarity            |      |
+|              centroid               |      |
+|         k-means clustering          |      |
+|    standard normal distribution     |      |
+|              z-scaling              |      |
+|           linear scaling            |      |
+|           min-max scaling           |      |
+|        linear interpolation         |      |
 |                                     |      |
 |                                     |      |
 |                                     |      |
