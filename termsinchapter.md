@@ -430,7 +430,41 @@
 |              test set               |      |
 |             holdout set             |      |
 |          cross validation           |      |
-|                                     |      |
+|          randomized trial           |      |
+|           treatment group           |      |
+|            control group            |      |
+|      statistical significance       |      |
+|         hypothesis testing          |      |
+|           null hypothesis           |      |
+|       alternative hypothesis        |      |
+|           test statistic            |      |
+|        hypothesis rejection         |      |
+|            type I error             |      |
+|            type II error            |      |
+|             t-statistic             |      |
+|           t-distribution            |      |
+|         degrees of freedom          |      |
+|               p-value               |      |
+|          scientific method          |      |
+|               t-test                |      |
+|          power of a study           |      |
+|          two-tailed p-test          |      |
+|          one-tailed p-test          |      |
+|           arm of a study            |      |
+|           cherry-picking            |      |
+|        Bonferroni correction        |      |
+|       family-wise error rate        |      |
+|       frequentist statistics        |      |
+|         Bayesian statistics         |      |
+|       conditional probability       |      |
+|            true positive            |      |
+|           false positive            |      |
+|          prior probability          |      |
+|            Bayes theorem            |      |
+|          degree of belief           |      |
+|        posterior probability        |      |
+|                prior                |      |
+|               support               |      |
 |                GIGO                 |      |
 |     assumption of independence      |      |
 |              bar chart              |      |
@@ -484,9 +518,33 @@
 |           linear scaling            |      |
 |           min-max scaling           |      |
 |        linear interpolation         |      |
-|                                     |      |
-|                                     |      |
-|                                     |      |
+|        classification model         |      |
+|                class                |      |
+|                label                |      |
+|         one-class learning          |      |
+|         two-class learning          |      |
+|        binary classification        |      |
+|        multi-class learning         |      |
+|              test set               |      |
+|           training error            |      |
+|          confusion matrix           |      |
+|              accuracy               |      |
+|           class imbalance           |      |
+|        sensitivity (recall)         |      |
+|       specificity (precision)       |      |
+|   positive predictive value (PPV)   |      |
+|      k-nearest neighbors (KNN)      |      |
+|             downsample              |      |
+|      negarive predictive value      |      |
+|       n-fold cross validation       |      |
+|         logistic regression         |      |
+|               outcome               |      |
+|           feature weight            |      |
+|              ROC curve              |      |
+|                AUROC                |      |
+|        model discrimination         |      |
+|             calibration             |      |
+|         categorical feature         |      |
 |                                     |      |
 
 
