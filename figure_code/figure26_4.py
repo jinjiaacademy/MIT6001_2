@@ -145,8 +145,34 @@ def k_nearest_classify(training_set, test_set, label, k):
     return true_pos, false_pos, true_neg, false_neg
 
 
+def prevalence_classify(training_set, test_set, label):
+    '''Assumes training_set & test_set lists of examples
+    Uses a prevalence-based classifier to predict
+    whether each example in test_set is of class label
+    Returns number of true positives, false positives,
+    true negatives, and false negatives'''
+    num_with_label = 0
+    for e in training:
+        if e.get_label() == label:
+            num_with_label += 1
+    prob_label = num_with_label/len(training_set)
+    true_pos, false_pos, true_neg, false_neg = 0, 0, 0, 0
+    for e in test_set:
+        if random.random() < prob_label:
+            if e.get_label() == label:
+                true_pos += 1
+            else:
+                false_pos += 1
+        else:
+            if e.get_label() != label:
+                true_neg += 1
+            else:
+                false_neg += 1
+    return true_pos, false_pos, true_neg, false_neg
+
+
 examples = build_marathon_examples('bm_results2012.csv')
 training, test_set = divide_80_20(examples)
 true_pos, false_pos, true_neg, false_neg = \
-    k_nearest_classify(training, test_set, 'M', 9)
+    prevalence_classify(training, test_set, 'M', 9)
 get_stats(true_pos, false_pos, true_neg, false_neg)
